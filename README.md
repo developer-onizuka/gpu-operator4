@@ -68,14 +68,14 @@ Before this step, make the container and store it in private registry. See the U
 - https://github.com/developer-onizuka/nvidia-docker_VirtualMachine3
 - https://github.com/developer-onizuka/private_dockerRegistry
 ```
-$ curl 192.168.33.1:5000/v2/_catalog
+$ curl 192.168.1.5:5000/v2/_catalog
 {"repositories":["face_recognizer","ubuntu"]}
 
-$ curl http://192.168.33.1:5000/v2/face_recognizer/tags/list
+$ curl http://192.168.1.5:5000/v2/face_recognizer/tags/list
 {"name":"face_recognizer","tags":["1.0.1"]}
 
-$ git clone https://github.com/developer-onizuka/gpu-operator3.git
-$ cd gpu-operator3
+$ git clone https://github.com/developer-onizuka/gpu-operator4.git
+$ cd gpu-operator4
 $ kubectl apply -f face_recognizer.yaml
 ```	
 	
