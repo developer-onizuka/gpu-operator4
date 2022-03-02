@@ -2,23 +2,21 @@
 
 You might use the Vagrantfile attached. It will deploy the following Virtual Machines.
 - One master node (No GPU machine)
-
 - Eight worker nodes (GPU machine and CPU machine)
 
 https://youtu.be/NrjNibxd1rk
 
-|  | CPU | Memory | GPU | GPU Driver |
-| --- | --- | --- | --- | --- |
-| Master | 2 | 8,192 MB | no | --- |
-| Worker1 | 2 | 4,096 MB | no | --- |
-| Worker2 | 2 | 4,096 MB | no | --- |
-| Worker3 | 2 | 4,096 MB | no | --- |
-| Worker4 | 2 | 4,096 MB | no | --- |
-| Worker5 | 2 | 4,096 MB | no | --- |
-| Worker6 | 2 | 4,096 MB | no | --- |
-| Worker7 | 2 | 4,096 MB | no | --- |
-| Worker8 | 2 | 16,384 MB | Quadro P400 | DaemonSet |
-
+|  | CPU | Memory | GPU | GPU Driver | Vagrantfile |
+| --- | --- | --- | --- | --- | --- |
+| Master | 2 | 8,192 MB | no | --- | [Vagrantfile](https://github.com/developer-onizuka/gpu-operator4/tree/master/precision3620/Vagrantfile) |
+| Worker1 | 2 | 4,096 MB | no | --- | [Vagrantfile](https://github.com/developer-onizuka/gpu-operator4/tree/master/optiplex3050/Vagrantfile) |
+| Worker2 | 2 | 4,096 MB | no | --- | [Vagrantfile](https://github.com/developer-onizuka/gpu-operator4/tree/master/optiplex3050/Vagrantfile) |
+| Worker3 | 2 | 4,096 MB | no | --- | [Vagrantfile](https://github.com/developer-onizuka/gpu-operator4/tree/master/optiplex3050/Vagrantfile) |
+| Worker4 | 2 | 4,096 MB | no | --- | [Vagrantfile](https://github.com/developer-onizuka/gpu-operator4/tree/master/optiplex3050/Vagrantfile) |
+| Worker5 | 2 | 4,096 MB | no | --- | [Vagrantfile](https://github.com/developer-onizuka/gpu-operator4/tree/master/optiplex5050/Vagrantfile) |
+| Worker6 | 2 | 4,096 MB | no | --- | [Vagrantfile](https://github.com/developer-onizuka/gpu-operator4/tree/master/optiplex5050/Vagrantfile) |
+| Worker7 | 2 | 4,096 MB | no | --- | [Vagrantfile](https://github.com/developer-onizuka/gpu-operator4/tree/master/optiplex5050/Vagrantfile) |
+| Worker8 | 2 | 16,384 MB | Quadro P400 | DaemonSet | [Vagrantfile](https://github.com/developer-onizuka/gpu-operator4/tree/master/optiplex5050/Vagrantfile) |
 
 https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/getting-started.html#chart-customization-options
 
