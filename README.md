@@ -43,9 +43,6 @@ nvidia/gpu-operator
 ```
 kubectl get pods -o wide
 NAME                                                              READY   STATUS     RESTARTS         AGE     IP              NODE      NOMINATED NODE   READINESS GATES
-employee-onprem-6c8bbbccdf-2tg9g                                  2/2     Running    0                22h     10.10.199.131   worker4   <none>           <none>
-employee-onprem-6c8bbbccdf-69tfd                                  2/2     Running    0                22h     10.10.235.132   worker1   <none>           <none>
-facerecognizer-test-55fdd785c4-422wt                              2/2     Running    0                4h40m   10.10.45.252    worker8   <none>           <none>
 gpu-feature-discovery-4r5ls                                       2/2     Running    10 (5h21m ago)   6h39m   10.10.45.249    worker8   <none>           <none>
 gpu-operator-1646200929-node-feature-discovery-master-6f7cxcxfh   2/2     Running    1 (6h59m ago)    6h59m   10.10.219.92    master    <none>           <none>
 gpu-operator-1646200929-node-feature-discovery-worker-cfttq       2/2     Running    2 (6h59m ago)    6h59m   10.10.199.133   worker4   <none>           <none>
@@ -58,9 +55,6 @@ gpu-operator-1646200929-node-feature-discovery-worker-sj5jm       2/2     Runnin
 gpu-operator-1646200929-node-feature-discovery-worker-t5bt6       2/2     Running    4 (4h50m ago)    6h59m   10.10.35.3      worker6   <none>           <none>
 gpu-operator-1646200929-node-feature-discovery-worker-w9gbb       2/2     Running    1 (6h59m ago)    6h59m   10.10.182.2     worker3   <none>           <none>
 gpu-operator-7ff85f9c4f-ktzfk                                     2/2     Running    1 (6h59m ago)    6h59m   10.10.219.93    master    <none>           <none>
-nginx-onprem-6c8cb9c57-9bsrn                                      2/2     Running    0                22h     10.10.199.132   worker4   <none>           <none>
-nginx-onprem-6c8cb9c57-zm2xj                                      2/2     Running    0                22h     10.10.189.66    worker2   <none>           <none>
-nginx-test-7fffbcb755-6d86x                                       2/2     Running    0                5h14m   10.10.189.68    worker2   <none>           <none>
 nvidia-container-toolkit-daemonset-qtrpk                          2/2     Running    4 (4h50m ago)    6h39m   10.10.45.246    worker8   <none>           <none>
 nvidia-cuda-validator-8l6zq                                       1/2     NotReady   0                86s     10.10.45.238    worker8   <none>           <none>
 nvidia-dcgm-exporter-vwkl9                                        2/2     Running    10 (5h21m ago)   6h39m   10.10.45.247    worker8   <none>           <none>
