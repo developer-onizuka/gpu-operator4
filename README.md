@@ -4,8 +4,6 @@ You might use the Vagrantfile attached. It will deploy the following Virtual Mac
 - One master node (No GPU machine)
 - Eight worker nodes (GPU machine and CPU machine)
 
-https://youtu.be/NrjNibxd1rk
-
 |  | CPU | Memory | GPU | GPU Driver | Vagrantfile |
 | --- | --- | --- | --- | --- | --- |
 | Master | 2 | 8,192 MB | no | --- | [Vagrantfile](https://github.com/developer-onizuka/gpu-operator4/tree/master/precision3620/Vagrantfile) |
