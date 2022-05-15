@@ -3,6 +3,10 @@
 You might use the Vagrantfile attached. It will deploy the following Virtual Machines.
 - One master node (No GPU machine)
 - Eight worker nodes (GPU machine and CPU machine)
+- If you wanna use specific version of kubernetes, you may use the followings instead of the line in each Vagrantfile.
+```
+sudo apt-get install -y -q kubelet=1.23.6-00 kubectl=1.23.6-00 kubeadm=1.23.6-00
+```
 
 |  | CPU | Memory | GPU | GPU Driver | Vagrantfile |
 | --- | --- | --- | --- | --- | --- |
