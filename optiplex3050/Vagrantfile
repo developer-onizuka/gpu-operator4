@@ -169,12 +169,12 @@ EOF
     server.vm.network "private_network", ip: "192.168.33.104"
     server.vm.hostname = "worker4"
     server.vm.provider "libvirt" do |kvm|
-      kvm.memory = 4096
+      kvm.memory = 16384
       kvm.cpus = 2
       kvm.machine_type = "q35"
       kvm.cpu_mode = "host-passthrough"
       kvm.kvm_hidden = true
-#      kvm.pci :bus => '0x01', :slot => '0x00', :function => '0x0'
+      kvm.pci :bus => '0x01', :slot => '0x00', :function => '0x0'
     end
     server.vm.provision "shell", inline: <<-SHELL
       sudo ip link set eth1 mtu 1450
