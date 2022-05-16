@@ -14,7 +14,7 @@ sudo apt-get install -y -q kubelet=1.23.6-00 kubectl=1.23.6-00 kubeadm=1.23.6-00
 | Worker1 | 2 | 4,096 MB | no | --- | [Vagrantfile](https://github.com/developer-onizuka/gpu-operator4/tree/master/optiplex3050/Vagrantfile) |
 | Worker2 | 2 | 4,096 MB | no | --- | [Vagrantfile](https://github.com/developer-onizuka/gpu-operator4/tree/master/optiplex3050/Vagrantfile) |
 | Worker3 | 2 | 4,096 MB | no | --- | [Vagrantfile](https://github.com/developer-onizuka/gpu-operator4/tree/master/optiplex3050/Vagrantfile) |
-| Worker4 | 2 | 4,096 MB | no | --- | [Vagrantfile](https://github.com/developer-onizuka/gpu-operator4/tree/master/optiplex3050/Vagrantfile) |
+| Worker4 | 2 | 16,384 MB | Quadro P1000 | --- | [Vagrantfile](https://github.com/developer-onizuka/gpu-operator4/tree/master/optiplex3050/Vagrantfile) |
 | Worker5 | 2 | 4,096 MB | no | --- | [Vagrantfile](https://github.com/developer-onizuka/gpu-operator4/tree/master/optiplex5050/Vagrantfile) |
 | Worker6 | 2 | 4,096 MB | no | --- | [Vagrantfile](https://github.com/developer-onizuka/gpu-operator4/tree/master/optiplex5050/Vagrantfile) |
 | Worker7 | 2 | 4,096 MB | no | --- | [Vagrantfile](https://github.com/developer-onizuka/gpu-operator4/tree/master/optiplex5050/Vagrantfile) |
