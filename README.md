@@ -40,7 +40,8 @@ $ helm repo add nvidia https://nvidia.github.io/gpu-operator \
 && helm repo update
 
 $ helm install --wait --generate-name \
-nvidia/gpu-operator
+nvidia/gpu-operator \
+--set driver.version=$VERSION
 ```
 
 # 2. Check if gpu-operator properly finished deploying DaemonSet
