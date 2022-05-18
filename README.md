@@ -39,7 +39,7 @@ $ curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/s
 $ helm repo add nvidia https://nvidia.github.io/gpu-operator \
 && helm repo update
 
-$ VERSION="470.82.01"
+$ VERSION="470.103.01"
 $ helm install --wait --generate-name \
 nvidia/gpu-operator \
 --set driver.version=$VERSION
