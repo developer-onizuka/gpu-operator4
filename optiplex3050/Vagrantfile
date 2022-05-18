@@ -216,7 +216,7 @@ sudo ip link set eth1 mtu 1450
 EOF
       chmod 775 /etc/rc.local
       sudo sed -i "/swap/d" /etc/fstab
-      #sudo sed -i '2i \ \ "insecure-registries":["192.168.1.5:5000"],' /etc/docker/daemon.json
+      sudo sed -i '2i \ \ "insecure-registries":["192.168.1.5:5000"],' /etc/docker/daemon.json
     SHELL
   end
 #--------------------
