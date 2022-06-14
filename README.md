@@ -19,6 +19,7 @@ sudo apt-get install -y -q kubelet=1.23.6-00 kubectl=1.23.6-00 kubeadm=1.23.6-00
 | Worker6 | 2 | 4,096 MB | no | --- | [Vagrantfile](https://github.com/developer-onizuka/gpu-operator4/tree/master/optiplex5050/Vagrantfile) |
 | Worker7 | 2 | 4,096 MB | no | --- | [Vagrantfile](https://github.com/developer-onizuka/gpu-operator4/tree/master/optiplex5050/Vagrantfile) |
 | Worker8 | 2 | 16,384 MB | Quadro P400 | DaemonSet | [Vagrantfile](https://github.com/developer-onizuka/gpu-operator4/tree/master/optiplex5050/Vagrantfile) |
+| Worker9 | 2 | 8,192 MB | Quadro P620 | DaemonSet | [Vagrantfile](https://github.com/developer-onizuka/gpu-operator4/tree/master/optiplex3050-M2/Vagrantfile) |
 
 https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/getting-started.html#chart-customization-options
 
