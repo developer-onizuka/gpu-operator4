@@ -55,6 +55,7 @@ EOF
       sshpass -p "vagrant" ssh-copy-id -i ~/.ssh/id_rsa.pub vagrant@192.168.33.106
       sshpass -p "vagrant" ssh-copy-id -i ~/.ssh/id_rsa.pub vagrant@192.168.33.107
       sshpass -p "vagrant" ssh-copy-id -i ~/.ssh/id_rsa.pub vagrant@192.168.33.108
+      sshpass -p "vagrant" ssh-copy-id -i ~/.ssh/id_rsa.pub vagrant@192.168.33.109
       curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
       sudo cat <<EOF | sudo tee /etc/apt/sources.list.d/kubernetes.list
 deb https://apt.kubernetes.io/ kubernetes-xenial main
@@ -79,6 +80,7 @@ EOF
       ssh vagrant@192.168.33.106 sudo kubeadm join 192.168.33.100:6443 --token $token --discovery-token-ca-cert-hash sha256:$hashkey
       ssh vagrant@192.168.33.107 sudo kubeadm join 192.168.33.100:6443 --token $token --discovery-token-ca-cert-hash sha256:$hashkey
       ssh vagrant@192.168.33.108 sudo kubeadm join 192.168.33.100:6443 --token $token --discovery-token-ca-cert-hash sha256:$hashkey
+      ssh vagrant@192.168.33.109 sudo kubeadm join 192.168.33.100:6443 --token $token --discovery-token-ca-cert-hash sha256:$hashkey
       sudo kubectl label node worker1 node-role.kubernetes.io/node=worker1
       sudo kubectl label node worker2 node-role.kubernetes.io/node=worker2
       sudo kubectl label node worker3 node-role.kubernetes.io/node=worker3
@@ -87,6 +89,7 @@ EOF
       sudo kubectl label node worker6 node-role.kubernetes.io/node=worker6
       sudo kubectl label node worker7 node-role.kubernetes.io/node=worker7
       sudo kubectl label node worker8 node-role.kubernetes.io/node=worker8
+      sudo kubectl label node worker9 node-role.kubernetes.io/node=worker9
       sudo kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml
       #sudo kubectl apply -f https://github.com/antrea-io/antrea/releases/download/v1.2.3/antrea.yml
       #sudo kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
