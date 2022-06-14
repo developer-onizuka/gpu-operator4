@@ -5,12 +5,12 @@ Vagrant.configure("2") do |config|
   config.vm.box = "generic/ubuntu2004"
   #config.vm.box = "roboxes/ubuntu2004"
 
-#---------- worker4 ----------
+#---------- worker9 ----------
   config.vm.define "worker9_192.168.33.109" do |server|
     server.vm.network "private_network", ip: "192.168.33.109"
-    server.vm.hostname = "worker4"
+    server.vm.hostname = "worker9"
     server.vm.provider "libvirt" do |kvm|
-      kvm.memory = 8192
+      kvm.memory = 12288
       kvm.cpus = 2
       kvm.machine_type = "q35"
       kvm.cpu_mode = "host-passthrough"
@@ -47,7 +47,8 @@ EOF
 deb https://apt.kubernetes.io/ kubernetes-xenial main
 EOF
       sudo apt-get update
-      sudo apt-get install -y -q kubelet kubectl kubeadm
+      #sudo apt-get install -y -q kubelet kubectl kubeadm
+      sudo apt-get install -y -q kubelet=1.23.6-00 kubectl=1.23.6-00 kubeadm=1.23.6-00
       sudo echo "KUBELET_EXTRA_ARGS=--node-ip=192.168.33.109" > /etc/default/kubelet
       sudo systemctl daemon-reload
       sudo systemctl restart kubelet
